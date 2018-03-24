@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta charset="UTF-8">
+	<title>About Us  - RYAN Sports Club</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/generalBackGround.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/aboutus_ourteam.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+-->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<style type="text/css">
+	
+	#bs-navbar-collapse-1 ul li a{color:#333; margin-left: 10px; transition: ease-in 0.2s;}
+	#bs-navbar-collapse-1 ul li a:hover{
+		background:rgba(0,0,0,0.6); color:#53DCDC}
+
+	#bs-navbar-collapse-1 .dropdown-menu li a {font-size:18px; padding-top:25px; padding-bottom:20px;margin-left:0px;/*background: #53DCDC;*/ color: #555;transition: ease-in 0.6s;}
+	#bs-navbar-collapse-1 .dropdown-menu li a:hover{border:0px; color:#fff; background:rgba(0,0,0,0.4); }
+	.social-icon-fa, .social-icon-ins, .social-icon-youtube,.social-icon-twitter {transition:ease-in 0.4s;}
+	.social-icon-fa:hover{background:blue;}
+	.social-icon-ins:hover{background:purple;}
+	.social-icon-youtube:hover{background:red;}
+	.social-icon-twitter:hover{background:#2E96CE; color:#ccc;}
+
+
+</style>
+
+<style>
+
+
+@media only screen and (max-width: 600px) {
+    #content {
+        padding-top:20%;
+    }
+   #section_inside{
+   	margin-bottom: 1%;
+   }
+   .btn-middle { margin-left: 80px; }
+   .marginLeft{ margin-left:4%; }
+}
+</style>
+</head>
+
+<body  class="body-wrap"  style="background: linear-gradient(0deg, grey, black);" > <!-- id="gradient" -->
+	<div id="header">
+		<!-- menu -->
+		<div class="container-fluid"  >
+			<nav class="navbar navbar-inverse navbar-fixed" id="navbar" role="navigation"  style="border-radius:0px;border:0px;background:rgba(0,0,0,0.8);z-index: 100; color: #fff; box-shadow: none;">
+				<div class="container-fluid" style="">
+					<div class="navbar-header">
+						
+							<button type="button" class="navbar-toggle " style="margin-top: 27px; margin-top: 25px; border: 0px; " data-toggle="collapse"  data-target="#bs-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<button type="button" onclick=" changeicon()" class="navbar-toggle " style="margin-top: 20px; border: 0px;	"  data-toggle="collapse" data-target="#searchbox">
+								<span style="color:white;" class="fa fa-search fa-2x"></span>
+							</button>
+							<button type="button"   class="navbar-toggle " style="margin-top: 20px; color: #FFF;border: 0px	" 	>
+								<span class="fa fa-sign-in fa-2x" title="login"></span>
+							</button>
+						
+						<a  href="index.html"><img src="images/RyanLOGO2.png" height="100" alt=""></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+						<ul class="nav navbar-nav paddingtop-15" id="leftt" >
+							<li><a style="color:white;"  href="index.html">HOME</a></li>
+							<li><a style="color:white;"  href="aboutus.html">ABOUT US</a></li>
+							<li class="dropdown" style=" margin:0px;"><!--FACILITIES-->
+
+								<a style="background: none; color: #fff;" href="facilities.html" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									FACILITIES <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a  href="facilities.html#indoor_page">INDOOR SPORTS</a></li>
+									<li><a href="facilities.html#outdoor_page">OUTDOOR SPORTS</a></li>
+									<li><a href="facilities.html#recreation_page">RECREATIONS</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" style=" margin:0px;"><!--MEMBERSHIP-->
+								<a style="background: none; color: #fff;" href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									MEMBERSHIP <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a href="membership_registration.html">REGISTRATION</a></li>
+									<li><a href="membership.html">MEMBER PACKAGE</a></li>
+									<li><a href="membership_login.html"> LOGIN</a></li>
+								</ul>
+							</li>
+							<li><a style="color:white;"  href="tellus.html">TELL US</a></li>
+							<li><a style="color:white;"  href="contact.html">CONTACT</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right paddingtop-15">
+							<li>
+								<button onclick="changeicon()"  id="btnsearch" data-toggle="collapse" data-target="#searchbox">
+									<span class="fa fa-search fa-3x"></span>
+								</button>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+				<div class="collapse" id="searchbox">
+					<div class="input-group"">
+						<input style="font-size:12px; font-style: italic;" type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button style="border:0px; background:#000;" class="btn btn-secondary"   type="button">
+								<i style="color: white;" class="fa fa-search fa-2x" ></i>
+							</button>
+						</span>
+					</div>
+				</div><!--end search-box-->
+			</nav>
+		</div>
+	</div>
+	<!-- end-header -->
+
+	<div id="content" class="clearfix">
+		<!--body of website-->
+	<div class="container" id="section_inside" style="height:auto; margin-top: 5.2%; background: none; padding:0px;"><!--slide1-->
+		
+			<h2  class="marginLeft"  style="color: #fff; font-weight: bold;">HOW WE DRIVE</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" >
+			      <div class="item active">
+			        <img  src="images/ABOUTUS/slide1.jpg" alt="slide1" style="width:100%; ">
+			      </div>
+
+			      <div class="item">
+			        <img src="images/ABOUTUS/slide2.jpg" alt="slide2" style="width:100%; ">
+			      </div>
+			    
+			      <div class="item">
+			        <img src="images/ABOUTUS/slide3.jpg" alt="slide3" style="width:100%; ">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev"style="padding-top:20%;">
+			      <i class="fa fa-caret-left" style="font-size:100px; color:#fff"  id="btn_carousel_left" ></i>
+			      
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next"style="padding-top:20%;">
+			      <i class="fa fa-caret-right" style="font-size:100px; color:#fff"  id="btn_carousel_right"  ></i>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+
+		
+	</div><!--slide1-->
+
+	<div class="container" id="section2_inside" style="padding-left: 0px"><!--section2-->
+				<div class="col-lg-4 col-md-12 col-xs-12" style=" color:#fff; padding-right:2%;">
+					<h2 style="font-weight:bold; ">RYAN SPORTS CLUB</h2>
+					<p style="text-align:justify; color: #fff;">We firmly believe in a fundamental approach to martial arts that combines respect, patience, self-discipline, and personal responsibility. We do not approach martial arts as a form of fighting, but rather as a deeply personal and challenging journey to achieve self-respect and respect for others, utilizing training disciplines and behavioral approaches that are applicable and beneficial for other areas of life. Through our programs’ focus on personal improvement through repetition and self-discipline, we offer a unique approach to forging both physical and mental strength – a necessary balance for any student of martial arts. 
+						<br>
+					At <strong>Ryan Sports Club</strong>, we are dedicated to helping all of our members achieve the lifestyle changes they have always wanted by strengthening both their bodies and minds. By inspiring a more positive and active lifestyle through our rigorous and comprehensive programs, we believe that we can help every one of our members reach a happier, healthier state of being. Our focus on creating a unique, fun, safe, and professional environment allows us to offer our members a more balanced life and all the benefits of self-discipline required for athletics.
+
+We believe that the benefits of sports can be enjoyed at any age and skill level, so we offer a wide range of programs that can accommodate members of any gender, fitness level, and experience. Whether you are a novice athlete or an experienced competitor, we can find the right program and training regimen for you!
+					</p>
+				</div>
+				<div class="col-lg-8 col-md-12 col-xs-12" style="padding-left: 2%; color:#fff; padding-right:0px;">
+						<div class="col-lg-12 col-md-12 col-xs-12" style="padding-right: 0px;">
+							<h2 style="font-weight:bold; color: #fff ">AL MORGAN</h2>
+							<span style="font-size: 18px; color: #fff; font-weight: bold;">MASTER TRAINER</span>
+							<div class="col-lg-6 col-md-12 col-xs-12" style="padding-left:0px;">
+								
+								<img width="100%" class="img-responsive" src="images/ABOUTUS/sport_face1.jpg">
+							</div>
+							<div class="col-lg-6 col-md-12 col-xs-12">
+								<br>
+								<p style="text-align:justify; color: #fff;">
+								&diams; <span style="font-style: italic;">Certified from the National Institute of Sports Medicine (NASM) USA</span>
+								<br>
+
+								<br>
+								&diams; 25 years of sports training in the United States, Germany, Hong Kong, Malaysia, Singapore, and This is Vietnam at California Fitness&amp;Yoga Centers.
+								</p>
+								<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_founder_1">READ MORE</a>
+									<!-- detail_founder_1 -->
+									  <div class="modal fade" id="detail_founder_1" role="dialog" style="padding-right: 0px;">
+									    <div class="modal-dialog" style="margin:0px; width:66%; margin-left:20%; margin-top:4%;">
+									    
+									      <!-- Modal content-->
+									      <div class=" modal-content img-thumbnail">
+									        <div class="container">
+									        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+
+										        	<div class="col-lg-4 col-md-12 col-xs-12">
+										        		<span style="font-size: 40px; font-weight: bold;">AL MORGAN
+</span>
+														<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/sport_face1_inside1.jpg" width="370">
+										        	</div>
+										        	<div class="col-lg-8 col-md-12 col-xs-12 text-justify">
+										        		 Certified from the National Institute of Sports Medicine (NASM) USA
+25 years of sports training in the United States, Germany, Hong Kong, Malaysia, Singapore, and This is Vietnam at California Fitness & Yoga Centers.
+										        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/sport_face1_inside.jpg" width="100%">
+										        	</div>
+									        	</div><!--row-->
+									        	
+									        </div><!--container-->
+									      </div>
+									      
+									    </div>
+									  </div>
+									<!-- detail_founder_1-->
+
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-xs-12" style="padding-right: 0px;">
+							<h2 style="font-weight:bold; color:#fff">ISDI</h2>
+							<div class="col-lg-6 col-md-12 col-xs-12" style="padding-left:0px;">
+								
+								<img width="100%" class="img-responsive" src="images/ABOUTUS/sport_face2.jpg">
+							</div>
+							<div class="col-lg-6 col-md-12 col-xs-12">
+								<br>
+								<p style="text-align:justify; color: #fff;">
+								&diams;  <span style="font-style: italic;">Certified from the National Institute of Sports Medicine (NASM) USA</span>
+								<br>
+								<br>
+								&diams; Assim has been practicing yoga for over 15 years. He also enjoys surfing the internet, watching movies and playing football.
+								</p>
+								<a class="btn btn-info btn-middle" style=" padding:15px 25px;  background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_founder_2">READ MORE</a>
+								<!-- detail_founder_2 -->
+									  <div class="modal fade" id="detail_founder_2" role="dialog" style="padding-right: 0px;">
+									    <div class="modal-dialog" style="margin:0px; width:66%; margin-left:20%; margin-top:4%;">
+									    
+									      <!-- Modal content-->
+									      <div class=" modal-content img-thumbnail">
+									        <div class="container">
+									        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+										        	<div class="col-lg-4 col-md-4 col-xs-12">
+										        		<h2 style="font-weight:bold;font-size: 40px; color:#fff">ISDI</h2>
+														<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/sport_face2_inside1.JPG">
+										        	</div>
+										        	<div class="col-lg-8 col-md-8 col-xs-12 text-justify">
+										        		
+It is known that Isidi Shahini is one of the leading personal trainers in Vietnam. He is a master trainer at the California Fitness & Yoga Center, Isidi is also a personal trainer for many celebrities such as actor Diem My 9x, singer Thao Trang, ... Isdi owns Appearance is nearly 1m90, 6-piece shape and handsome face. In addition to working as a personal trainer, he also starred in TQ singer's song Tell Me Why. He said: "I love this PT work extremely, especially when I can accompany excellent customers like Pham Huong. She is a stalwart. Remembering the days before the Miss Universe pageant in Las Vegas, we were very pressured to represent Vietnam with an outstanding performance. Huong practices very seriously and follows my diet seriously. Finally, she also shines in the finale. I'm really proud of Pham Huong. "
+										        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/sport_face2_inside.jpg" width="100%">
+										        	</div>
+									        	</div><!--row-->
+									        	
+									        </div><!--container-->
+									      </div>
+									      
+									    </div>
+									  </div>
+									<!-- detail_founder_2-->
+							</div>
+						</div>
+				</div>
+	</div><!--section2-->
+
+	<div class="container"><!--section3-->
+		<div class="row">
+				<div class="col-lg-4 col-md-12 col-xs-12" style=" color:; padding-right:2%;">
+					<h2 style="font-weight:bold; color:#fff;">OUR TEAM</h2>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-12 col-xs-12"> <!--our team 1-->
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_1.jpg"  width="100%"  >
+					<br>
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>CUPID MAI QUOC ANH</strong>
+					
+					</p>
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_1">READ MORE</a>
+					<!-- detail_1 -->
+					  <div class="modal fade" id="detail_1" role="dialog" style="padding-right: 0px;">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        		<span style="font-size: 40px;"></span>
+						        		<video width="370" height="267" autoplay muted loop class="img-responsive">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/mp4">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/ogg">
+										  Your browser does not support the video tag.
+										</video>
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_1_inside1.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12">
+						        		Powerful, seductive in every dance moves, this year's contest, Mai Quoc Anh has quickly become "strange" in "Vietnam's Got Talent". Born and raised in Ho Chi Minh City in a family with sports tradition, father was a swimming swimmer so the passion of Mai Quoc Anh was strengthened. Prior to that, Mai Quoc Anh had studied Business Administration. Explaining the change in career orientation, he said: "The family wants me to have a basic education background to lead a stable life. But walking on the road has been programmed for a while, then I go back to the "call" of sports always urged in his.
+
+Determined to pursue that passion, Mai Quoc Anh met many difficulties, challenges. Beginning with the gymnastics, during a training session, he suffered a fractured hand and had to stop. He shared, about 2 years back to start "friends with column". At the first moment when Mai Quoc Anh tried to contact the column, the first class athlete thought this guy ... holding the column is the best fit.
+						        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_1_inside.jpg">
+						        	</div>
+					        	</div><!--row-->
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_1 -->
+				</div>
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_2.jpg"  width="100%"  >
+					
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>RICKY</strong>
+					
+					</p>
+					<br>
+					
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_2">READ MORE</a>
+					<!-- detail_2 -->
+					  <div class="modal fade" id="detail_2" role="dialog">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        		
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_2_inside.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12 text-justify">
+						        		International coach Lesmills certificates: BODYCOMBAT, BODYPUMP, GRIT.
+											Winner of many international awards for Karate, Kickboxing, Muay Thai and MMA.
+
+
+											Teaching, training the most popular classes in the club: BodyPump, BodyCombat, RPM, Spining, TRX, Tabata, Strength Training ...
+											Be one of the first Indians to participate in the World OCR Championships.
+						        		
+						        	</div>
+					        	</div>
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_2 -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-xs-12"> <!--our team 2-->
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_3.jpg"  width="100%"  >
+					<br>
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>KAINAN</strong>
+					
+					</p>
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_3">READ MORE</a>
+					<!-- detail_3 -->
+					  <div class="modal fade" id="detail_3" role="dialog">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        	
+						        		<span style="font-size: 40px; color: #fff;">KAINAN</span>
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_3-inside.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12 text-justify">
+						        		
+
+
+											General Pencak Silat from 2003 - 2006.
+											Certificate of Fitness Trainer, Bosu Traning Certification, Master Trainer Certification
+											Technogym, Kickfit certification, Pencak silat certification, CPR certification. .
+
+
+											9 years in the fitness industry.
+											6 years of practicing pencak silat.
+											Muscle growth, fat reduction, injury recovery and pathological problems.
+											<video width="100%" height="267" autoplay muted loop class="img-responsive">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/mp4">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/ogg">
+										  Your browser does not support the video tag.
+										</video>
+						        		<!--img style="margin-top: 10px;"  class="img-responsive" src="images/HOME/out_team_modal2.jpg"-->
+						        	</div>
+					        	</div>
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_3 -->
+				</div>
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_4.jpg"  width="100%"  >
+					<br>
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>NETO AMORIM</strong>
+					
+					</p>
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_4">READ MORE</a>
+					<!-- detail_4 -->
+					  <div class="modal fade" id="detail_4" role="dialog">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        		<span style="font-size: 40px; color: #53DCDC;">&diams;NETO AMORIM</span>
+						        		<video width="370" height="267" autoplay muted loop class="img-responsive">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/mp4">
+										  <source src="images/ABOUTUS/galleries_6.mp4" type="video/ogg">
+										  Your browser does not support the video tag.
+										</video>
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_4_inside1.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12">
+						        		
+											
+												International coach Lesmills veteran Brazil subjects: Bodycombat, Bodypump, Bodystep, RPM, BodyAttack, Bodybalance, BodyVive, PowerJump.
+
+												19 years of experience. Coach Zumbaa at California Fitness  Yoga Centers.
+												Participate in countless Aerobic, Dance and Rhythm and Hip Hop performances in Brazil.
+												Choreographer programs in Vietnam and Asia (PowerX, Pop Dance, Killer Cycle, Pop Kids).
+						        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_4_inside.jpg">
+						        	</div>
+					        	</div>
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_4 -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-xs-12"> <!--our team 3-->
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_5.jpg"  width="100%"  >
+					<br>
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>VIKAS</strong>
+					
+					</p>
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_5">READ MORE</a>
+					<!-- detail_5 -->
+					  <div class="modal fade" id="detail_5" role="dialog">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        		<span style="font-size: 40px; color: #fff;">&diams;VIKAS</span>
+						        		
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_5_inside.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12">
+						        		
+										Uttarakhand University Sanskrit Certificate of Yoga and Therapy, India
+										Five years of teaching experience at Yoga Sutra Federation in Rishlkesh, India
+						        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_5_inside1.jpg">
+						        	</div>
+					        	</div>
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_5 -->
+				</div>
+				<div class="jumbotron"  style=" background: rgba(255,255,255,0.1);padding:10px; margin-bottom: 10px;">
+					<img class="img-responsive center-block" src="images/ABOUTUS/our_team_6.jpg" width="100%" >
+					<br>
+					<p style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px;">
+					&diams;<strong>ANIL</strong>
+					
+					</p>
+					<a class="btn btn-info btn-middle" style=" padding:15px 25px; background:rgba(255,255,255,0.4);color:#fff; border:none;" href="#"  data-toggle="modal" data-target="#detail_6">READ MORE</a>
+					<!-- detail_6 -->
+					  <div class="modal fade" id="detail_6" role="dialog">
+					    <div class="modal-dialog" style="margin:0px; width:60%; margin-left:20%; margin-top:4%;">
+					    
+					      <!-- Modal content-->
+					      <div class=" modal-content">
+					        <div class="container">
+					        	<div class="row" style="padding-top:20px; padding-bottom:20px;">
+						        	<div class="col-lg-4 col-md-4 col-xs-12">
+						        		<span style="font-size: 40px; color: #fff;">&diams;ANIL</span>
+						        		<video width="370" height="267" autoplay muted loop class="img-responsive">
+										  <source src="images/ABOUTUS/galleries_3.mp4" type="video/mp4">
+										  <source src="images/ABOUTUS/galleries_3.mp4" type="video/ogg">
+										  Your browser does not support the video tag.
+										</video>
+										<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_6_inside1.jpg">
+						        	</div>
+						        	<div class="col-lg-8 col-md-8 col-xs-12">
+						        		
+												Master of Science in Yoga Science from Uttarakhand University, Sanskrit, India
+												Five years of experience at North Kolkata Yoga and Yoga Organization, India
+						        		<img style="margin-top: 10px;"  class="img-responsive" src="images/ABOUTUS/our_team_6_inside.jpg">
+						        	</div>
+					        	</div>
+					        	
+					        </div><!--container-->
+					      </div>
+					      
+					    </div>
+					  </div>
+					<!-- detail_6 -->
+				</div>
+			</div>
+
+
+		</div>
+	</div><!------------------------------------------------------section3-->
+	<div class="container"><!--ourteam-->
+		
+	</div><!--ourteam-->
+
+
+	<div class="container" id="section_inside" style="height:auto; margin-top:2px; background: rgba(0,0,0,0.05); padding:20px; margin-bottom: 2%; border-radius: 5px;"><!-------------------------------------------------------galleries-->
+		<div class="row">
+				<div class="col-lg-4 col-md-12 col-xs-12" style=" color:; padding-right:2%;">
+					<h2 style="font-weight:bold; color:#fff;">FAST GALLERIES</h2>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12" style="color:#fff; font-size: 26px;">EVENTS
+				<hr style="border:0.3px solid #fff;">
+				<a href="#">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_6.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_6.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				</a>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+				<hr style="border:0.3px solid red #fff;">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_5.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_5.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12" style="color: #fff; font-size: 26px;">ARTICLES
+				<hr style="border:0.3px solid #fff;">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_4.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_4.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+				<hr style="border:0.3px solid #fff;">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_3.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_3.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12" style="color:#fff/* #53DCDC*/; font-size: 26px;">ACTIVITIES
+				<hr style="border:0.3px solid #fff;">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_2.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_2.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+				<hr style="border:0.3px solid #fff;">
+					<video width="370" height="267" autoplay muted loop>
+					  <source src="images/ABOUTUS/galleries_1.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_1.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+					</video>
+				<span style="text-align:justify; color: #fff;font-size:16px; margin-right: 6px;margin-left: 6px; font-weight: bold;">
+					&diams; Certified from the National Institute of Sports Medicine (NASM) USA
+					<br>
+				</span>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-xs-12">
+				<video width="100%" autoplay class="img-thumbnail" muted loop>
+					  <source src="images/ABOUTUS/galleries_big_vdo.mp4" type="video/mp4">
+					  <source src="images/ABOUTUS/galleries_big_vdo.mp4" type="video/ogg">
+					  Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+
+
+	</div>
+		
+	</div><!-------------------------------------------------------galleries-->
+		
+		<!--body of website-->
+	</div>
+	<div id="footer" style="z-index: -100; color: #fff;"> <!--footer-->
+		<div class="container" style="font-weight: bold; padding-top:2px;">
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-xs-12">
+					<div class="row">
+						<table class="table-condensed" style="margin-left:20px;">
+							<tr>
+								<td colspan="3" style="font-size:30px; color:#fff ">
+									CONTACT US
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-mobile" style="font-size:30px;"></i></td>
+								<td> | </td>
+								<td  style="font-size:16px;">
+									(+84) 093 268 688
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-phone" style="font-size:26px;"></i></td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									(+84) 268 268 688
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-envelope" style="font-size:22px;"></i></td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									info@ryansportsclub.com
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<br>
+								</td>
+							</tr>
+						</table>
+
+						
+
+					</div>
+					
+				</div>
+				<div class="col-lg-4 col-md-12 col-xs-12" style="color:#fff;">
+					<table class="table-condensed" style="border-top:none;">
+						<tr>
+							<td colspan="3" style="font-size:30px; color:#fff ">
+								OPEN HOURS
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>MONDAYS</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 23:00
+							</td>
+						</tr>
+						<tr>
+							<td>TUE - FRI</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 23:00
+							</td>
+						</tr>
+						<tr>
+							<td>SAT & SUN</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 20:00
+							</td>
+						</tr>
+						<tr>
+							<td>PUBLIC HOLIDAYS</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 20:00
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<br>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-4 col-md-12 col-xs-12">
+					<table class="table-condensed" >
+						<tr>
+							<td colspan="3" style="font-size:30px; color:#fff ">LOCATION</td>
+
+						</tr>
+						<tr>
+							<td colspan="3">
+								<iframe class="img-responsive img-thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6626580958668!2d106.66520265820785!3d10.786376998078707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520391560324" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen>
+
+								</iframe>
+							</td>
+						</tr>
+						<tr>
+							<td style="font-size:30px;">
+								<i class="fa fa-map-marker"></i>
+
+							</td>
+							<td>
+								| 
+							</td>
+							<td style="font-size:16px;">
+								590 Cach Mang Thang 08, District 10, HCMC, Vietnam.	
+							</td>
+
+						</tr>
+						<tr>
+							<td colspan="3">
+								<br>
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+			<div><!--1 slpitting line-->
+				<hr style="border:0.3px solid #fff;">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-xs-12" style="color: #fff; font-weight:normal;">
+					&copy;05-02-2018 ryansportsclub.com.DesignedByTuanDuog &amp; TienPhan
+					
+					
+					
+				</div>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-xs-4">
+						<table>
+							<tr  style="color: #fff; font-weight:bold; font-size: 14px;">
+								<td>FOLLOW US</td>
+							</tr>
+							<tr>
+								<td>
+									<hr style="width: 50%; margin-top:0px; margin-left:0px; border:0.6px solid #fff;">
+								</td>
+							</tr>
+						</table>
+						
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-8">
+							<a class="btn btn-info social-icon-fa" href="#" ><i class="fa fa-facebook" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-ins"  href="#" ><i class="fa fa-instagram" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-youtube"  href="#" ><i class="fa fa-youtube" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-twitter"  href="#" ><i class="fa fa-twitter" style="font-size:16px;"></i></a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div><!--footer-->
+
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script type="text/javascript" src="js/backgroundJS.js"></script>
+	<script type="text/javascript" src="js/aboutus_ourteam.js"></script>
+	<!-- <script >
+		$(function(){
+			$("#header").load("includes/header.html") ;
+			$("#footer").load("includes/footer.html")
+		});
+	</script> -->
+</body>
+</html>

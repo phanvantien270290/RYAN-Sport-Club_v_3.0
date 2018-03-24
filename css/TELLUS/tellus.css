@@ -1,0 +1,100 @@
+.tellus-button{
+	border:2px solid #FFF;
+	border-radius: 10px;
+	background-color: inherit;
+	color:#FFF;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bolder;
+	/*letter-spacing: 1px;*/
+	transition: .5s;
+	/*transition-duration: 1.8s;*/
+}
+/*modal suggestion*/
+#SuggestionModal,#ComplaintsModal {
+	color: #FFF;
+
+}
+
+.modal-content{
+	background-color: rgba(77,86,252,1);
+}
+.modal-content input,textarea{
+	background-color: transparent !important;
+	color: #FFF;
+	border-radius: 10px;
+	border: 1px solid #FFF;
+}
+textarea{
+	color: #FFF !important;
+}
+#SuggestionModal >.col-md-9{
+	background-color: rgba(77,86,252,1);
+
+}
+/*end-modal suggestion*/
+.tellus-button:hover{
+	/*transform: rotate3d(0, 1, 0, 360deg);*/
+	background-color:rgba(45,209,160,1);
+}
+.small-font{
+	font-size: 32px;
+}
+@media (max-width: 500px){
+	.tellus-button {
+		width: 100%;
+	}
+	.small-font{
+		font-size: 20px;
+	}
+}
+#success_message,#success_message2 {
+	display: none;
+}
+i[data-bv-icon-for]{
+	/*padding-top: 10px;*/
+	/*//color:#E53E19 !important;;*/
+}
+/*selection*/
+.select-style {
+	border: 1px solid #ccc;
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: transparent;
+}
+.select-style select {
+	padding: 5px 8px;
+	width: 110%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	font-size: 18px;
+
+}
+.select-style select:hover{
+	background-color: #2731D7;
+	color: #FFF;
+}
+.select-style select:focus {
+	outline: none;
+}
+.wrap-QA{
+	margin:20px 0px 20px 0px;
+}
+.QA{
+	border-bottom: 3px solid #FFF;font-size: 28px;color: #FFF;font-weight: bolder;
+}
+.wrap-QA >span{
+	margin-left: 30px;font-size: 24px;
+color: #FFF;
+	 font-weight: 400;background-color: transparent;
+}
+.content-QA{
+	padding:25px ;font-size: 20px;background-color: #F0C2F0;
+}

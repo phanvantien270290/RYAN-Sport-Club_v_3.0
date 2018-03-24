@@ -1,0 +1,84 @@
+/* bootstrap dropdown hover menu*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	background: linear-gradient(0deg, grey, black) !important;
+}
+
+
+#header>.container-fluid{
+	padding-left: 0;padding-right: 0;
+}
+
+nav {
+	box-shadow: 5px 4px 5px rgba(0,0,0,0.6);
+	font-weight: bold;
+	font-size: 14px !important;
+
+}
+i{
+	transition: .4s ease-in-out;
+}
+
+#navbar{
+	position: fixed;width: 100%;transition: 0.3s;
+}
+.paddingtop-15{
+	padding-top: 15px;
+}
+
+.nav.navbar-nav.paddingtop-15{
+	padding-left: 10%;
+}
+#btnsearch{
+	background-color: transparent;	
+	color:#FFF;
+	padding-top:5px;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	transition: 0.7s;
+}
+#btnsearch:hover{
+	background-color:red;
+	border-radius: 40%;
+}
+.form-control{
+	 font-size: 25px;
+}
+.btn.btn-secondary{
+	 background-color: #FFF;
+}
+.form-control,.btn.btn-secondary{
+	height:60px;
+}
+
+@media only screen and (max-width:850px){
+	#leftt{
+		padding-left: 0;
+	}
+
+}
+@media only screen and (max-width: 768px){
+	#btnsearch{
+		display: none;
+	}
+}
+#logo{
+	height: 100px;
+}
+@media only screen and (max-width: 320px){
+	#logo {
+		height: 70px;
+	}
+}
+#logo{
+	height: 100px;
+}
+@media only screen and (max-width: 320px){
+	#logo {
+		height: 70px;
+	}
+}

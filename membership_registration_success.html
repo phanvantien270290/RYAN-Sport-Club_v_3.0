@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta charset="UTF-8">
+	<title>Welcome to  - RYAN Sports Club</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/generalBackGround.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+-->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<style type="text/css">
+	
+	#bs-navbar-collapse-1 ul li a{color:#fff; margin-left: 10px; transition: ease-in 0.4s;}
+	#bs-navbar-collapse-1 ul li a:hover{
+		background:rgba(0,0,0,0.6); color:#53DCDC}
+
+	#bs-navbar-collapse-1 .dropdown-menu li a {font-size:18px; padding-top:25px; padding-bottom:20px;margin-left:0px;/*background: #53DCDC;*/ color: #555;transition: ease-in 0.6s;}
+	#bs-navbar-collapse-1 .dropdown-menu li a:hover{border:0px; color:#fff; background:rgba(6,6,8,0.4); }
+	.social-icon-fa, .social-icon-ins, .social-icon-youtube,.social-icon-twitter {transition:ease-in 0.4s;}
+	.social-icon-fa:hover{background:blue;}
+	.social-icon-ins:hover{background:purple;}
+	.social-icon-youtube:hover{background:red;}
+	.social-icon-twitter:hover{background:#2E96CE; color:#ccc;}
+
+
+</style>
+
+<style>
+
+
+@media only screen and (max-width: 600px) {
+    #content {
+        padding-top:20%;
+    }
+   #section_inside{
+   	margin-bottom: 1%;
+
+   }
+   #welcome_mess img {
+   	margin-left:30%;
+   	width:100%;
+   }
+}
+</style>
+</head>
+
+<body  class="body-wrap"  style="background: linear-gradient(0deg, grey, black);" ><!--id="gradient"-->
+	<div id="header">
+		<!-- menu -->
+		<div class="container-fluid"  >
+			<nav class="navbar navbar-inverse navbar-fixed" id="navbar" role="navigation"  style="border-radius:0px;border:0px;background:rgba(0,0,0,0.6);z-index: 100; box-shadow: none;">
+				<div class="container-fluid" style="">
+					<div class="navbar-header">
+						
+							<button type="button" class="navbar-toggle " style="margin-top: 27px; margin-top: 25px; border: 0px; " data-toggle="collapse"  data-target="#bs-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<button type="button" onclick=" changeicon()" class="navbar-toggle " style="margin-top: 20px; border: 0px;	"  data-toggle="collapse" data-target="#searchbox">
+								<span style="color:white;" class="fa fa-search fa-2x"></span>
+							</button>
+							<button type="button"   class="navbar-toggle " style="margin-top: 20px; color: #FFF;border: 0px	" 	>
+								<span class="fa fa-sign-in fa-2x" title="login"></span>
+							</button>
+						
+						<a  href="index.html"><img src="images/RyanLOGO2.png" height="100" alt=""></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+						<ul class="nav navbar-nav paddingtop-15" id="leftt" >
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="aboutus.html">ABOUT US</a></li>
+							<li class="dropdown" style=" margin:0px;"><!--FACILITIES-->
+								<a style="background: none;" href="facilities.html" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									FACILITIES <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a  href="facilities.html#indoor_page">INDOOR SPORTS</a></li>
+									<li><a href="facilities.html#outdoor_page">OUTDOOR SPORTS</a></li>
+									<li><a href="facilities.html#recreation_page">RECREATIONS</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" style=" margin:0px;"><!--MEMBERSHIP-->
+								<a style="background: none;" href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									MEMBERSHIP <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a href="membership_registration.html">REGISTRATION</a></li>
+									<li><a href="membership.html">MEMBER PACKAGE</a></li>
+									<li><a href="membership_login.html"> LOGIN</a></li>
+								</ul>
+							</li>
+							<li><a href="tellus.html">TELL US</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right paddingtop-15">
+							<li>
+								<button onclick="changeicon()"  id="btnsearch" data-toggle="collapse" data-target="#searchbox">
+									<span class="fa fa-search fa-3x"></span>
+								</button>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+				<div class="collapse" id="searchbox">
+					<div class="input-group"">
+						<input style="font-size:12px; font-style: italic;" type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button style="border:0px; background:#000;" class="btn btn-secondary"   type="button">
+								<i style="color: white;" class="fa fa-search fa-2x" ></i>
+							</button>
+						</span>
+					</div>
+				</div><!--end search-box-->
+			</nav>
+		</div>
+	</div>
+	<!-- end-header -->
+
+	<div id="content" class="clearfix">
+		<!--body of website-->
+	
+
+	<div class="container-fluid"><!-------------------------------------------------------------------------------------REGISTRATION FORM-->
+	
+		
+		<div class="row" style="padding-top: 6%;">                                              
+			<div class="col-lg-6 col-md-6 col-xs-6" id="welcome_mess"> 
+				
+				<img class="img-responsive col-lg-offset-4" src="images/MEMBERSHIP/memberpackage_model_left.png" width="60%">
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-6">
+				
+				<img class="img-responsive" src="images/MEMBERSHIP/memberpackage_model.png" width="50%">
+			</div>
+			
+		</div>																					
+	</div><!----------------------------------------------------------------------------------------------------------REGISTRATION FORM-->
+
+		<!--body of website-->
+	</div>
+	<div id="footer" style="z-index: -100; color: #fff;"> <!--footer-->
+		<div class="container" style="font-weight: bold;">
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-xs-12">
+					<div class="row">
+						<table class="table-condensed" style="margin-left:20px;">
+							<tr>
+								<td colspan="3" style="font-size:30px; color:#53DCDC ">
+									CONTACT US
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-mobile" style="font-size:30px;"></i></td>
+								<td> | </td>
+								<td  style="font-size:16px;">
+									(+84) 093 268 688
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-phone" style="font-size:26px;"></i></td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									(+84) 268 268 688
+								</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-envelope" style="font-size:22px;"></i></td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									info@ryansportsclub.com
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<br>
+								</td>
+							</tr>
+						</table>
+
+						
+
+					</div>
+					
+				</div>
+				<div class="col-lg-4 col-md-12 col-xs-12" style="color:#fff;">
+					<table class="table-condensed" style="border-top:none;">
+						<tr>
+							<td colspan="3" style="font-size:30px; color:#53DCDC ">
+								OPEN HOURS
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>MONDAYS</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 23:00
+							</td>
+						</tr>
+						<tr>
+							<td>TUE - FRI</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 23:00
+							</td>
+						</tr>
+						<tr>
+							<td>SAT & SUN</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 20:00
+							</td>
+						</tr>
+						<tr>
+							<td>PUBLIC HOLIDAYS</td>
+							<td> | </td>
+							<td style="font-size:16px;">
+								8:00 - 20:00
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<br>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-4 col-md-12 col-xs-12">
+					<table class="table-condensed" >
+						<tr>
+							<td colspan="3" style="font-size:30px; color:#53DCDC ">LOCATION</td>
+
+						</tr>
+						<tr>
+							<td colspan="3">
+								<iframe class="img-responsive img-thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6626580958668!2d106.66520265820785!3d10.786376998078707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520391560324" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen>
+
+								</iframe>
+							</td>
+						</tr>
+						<tr>
+							<td style="font-size:30px;">
+								<i class="fa fa-map-marker"></i>
+
+							</td>
+							<td>
+								| 
+							</td>
+							<td style="font-size:16px;">
+								590 Cach Mang Thang 08, District 10, HCMC, Vietnam.	
+							</td>
+
+						</tr>
+						<tr>
+							<td colspan="3">
+								<br>
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+			<div><!--1 slpitting line-->
+				<hr style="border:0.3px solid #53DCDC;">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-xs-12" style="color: #53DCDC; font-weight:normal;">
+					&copy;05-02-2018 ryansportsclub.com.DesignedByTuanDuog &amp; TienPhan
+					
+					
+					
+				</div>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-xs-4">
+						<table>
+							<tr  style="color: #53DCDC; font-weight:bold; font-size: 14px;">
+								<td>FOLLOW US</td>
+							</tr>
+							<tr>
+								<td>
+									<hr style="width: 50%; margin-top:0px; margin-left:0px; border:0.6px solid #53DCDC;">
+								</td>
+							</tr>
+						</table>
+						
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-8">
+							<a class="btn btn-info social-icon-fa" href="#" ><i class="fa fa-facebook" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-ins"  href="#" ><i class="fa fa-instagram" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-youtube"  href="#" ><i class="fa fa-youtube" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-twitter"  href="#" ><i class="fa fa-twitter" style="font-size:16px;"></i></a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div><!--footer-->
+
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script type="text/javascript" src="js/backgroundJS.js"></script>
+	<!-- <script >
+		$(function(){
+			$("#header").load("includes/header.html") ;
+			$("#footer").load("includes/footer.html")
+		});
+	</script> -->
+</body>
+</html>

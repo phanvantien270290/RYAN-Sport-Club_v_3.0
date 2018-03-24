@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tell us  - RYAN Sports Club</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/TELLUS/tellus.css">
+	<!--===============================================================================================-->
+
+	<style>
+
+</style>
+<style type="text/css">
+
+#bs-navbar-collapse-1 ul li a{color:#333; margin-left: 10px; transition: ease-in 0.2s;}
+#bs-navbar-collapse-1 ul li a:hover{
+	background:rgba(0,0,0,0.6); color:#53DCDC}
+
+	#bs-navbar-collapse-1 .dropdown-menu li a {font-size:18px; padding-top:25px; padding-bottom:20px;margin-left:0px;/*background: #53DCDC;*/ color: #555;transition: ease-in 0.6s;}
+	#bs-navbar-collapse-1 .dropdown-menu li a:hover{border:0px; color:#fff; background:rgba(0,0,0,0.4); }
+	.social-icon-fa, .social-icon-ins, .social-icon-youtube,.social-icon-twitter {transition:ease-in 0.4s;}
+	.social-icon-fa:hover{background:blue;}
+	.social-icon-ins:hover{background:purple;}
+	.social-icon-youtube:hover{background:red;}
+	.social-icon-twitter:hover{background:#2E96CE; color:#ccc;}
+
+
+</style>
+
+<style>
+
+
+@media only screen and (max-width: 600px) {
+	#content {
+		padding-top:20%;
+	}
+	#section_inside{
+		margin-bottom: 1%;
+	}
+	.btn-middle { margin-left: 80px; }
+	.marginLeft{ margin-left:4%; }
+}
+</style>
+</head>
+<body>
+	<header id="header" class="">
+		<div id="header">
+			<!-- menu -->
+			<div class="container-fluid"  >
+				<nav class="navbar navbar-inverse navbar-fixed" id="navbar" role="navigation"  style="border-radius:0px;border:0px;background:rgba(0,0,0,0.8);z-index: 100; color: #fff; box-shadow: none;">
+					<div class="container-fluid" style="">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle " style="margin-top: 27px; border: 0px; " data-toggle="collapse"  data-target="#bs-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<button type="button" onclick=" changeicon()" class="navbar-toggle " style="margin-top: 20px; border: 0px;	"  data-toggle="collapse" data-target="#searchbox">
+								<span style="color:white;" class="fa fa-search fa-2x"></span>
+							</button>
+							<button type="button"   class="navbar-toggle " style="margin-top: 20px; color: #FFF;border: 0px	" 	>
+								<span class="fa fa-sign-in fa-2x" title="login"></span>
+							</button>
+
+							<a  href="index.html"><img src="images/RyanLOGO2.png" height="100" alt=""></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+							<ul class="nav navbar-nav paddingtop-15" id="leftt" style="color: #fff;">
+								<li><a style="color:white;"  href="index.html">HOME</a></li>
+								<li><a style="color:white;"  href="aboutus.html">ABOUT US</a></li>
+								<li class="dropdown" style=" margin:0px;"><!--FACILITIES-->
+
+									<a style="background: none; color: #fff;" href="facilities.html" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+										FACILITIES <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+										<li><a  href="facilities.html#indoor_page">INDOOR SPORTS</a></li>
+										<li><a href="facilities.html#outdoor_page">OUTDOOR SPORTS</a></li>
+										<li><a href="facilities.html#recreation_page">RECREATIONS</a></li>
+									</ul>
+								</li>
+								<li class="dropdown" style=" margin:0px;"><!--MEMBERSHIP-->
+									<a style="background: none; color: #fff;" href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+										MEMBERSHIP <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+										<li><a href="membership_registration.html">REGISTRATION</a></li>
+										<li><a href="membership.html">MEMBER PACKAGE</a></li>
+										<li><a href="membership_login.html"> LOGIN</a></li>
+									</ul>
+								</li>
+								<li><a style="color:white;"  href="tellus.html">TELL US</a></li>
+								<li><a style="color:white;"  href="contact.html">CONTACT</a></li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right paddingtop-15">
+								<li>
+									<button onclick="changeicon()"  id="btnsearch" data-toggle="collapse" data-target="#searchbox">
+										<span class="fa fa-search fa-3x"></span>
+									</button>
+								</li>
+
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+					<div class="collapse" id="searchbox">
+						<div class="input-group"">
+							<input style="font-size:12px; font-style: italic;" type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button style="border:0px; background:#000;" class="btn btn-secondary"   type="button">
+									<i style="color: white;" class="fa fa-search fa-2x" ></i>
+								</button>
+							</span>
+						</div>
+					</div><!--end search-box-->
+				</nav>
+			</div>
+		</div>
+		<!-- end-header -->
+	</header><!-- /header -->
+	<div class="container" style="padding:140px 50px 40px 5%;">
+		<div class="row">
+			<div class="col-md-4 col-xs-12">
+				<div class="wow fadeInDown">
+					<img src="images/HOME/madhavan.JPG"  class="img-responsive" alt="">
+				</div>
+			</div>
+			<div class="col-md-8" style="padding-left: 20px;color: #FFF">
+				<h1 class="wow bounceInLeft" style="font-size: 50px;font-weight: 700">Let tell us :</h1>
+				<ul class="small-font wow bounceInRight" >
+					<li>How should we improve our service</li>
+					<li>What makes you comfortable</li>
+					<li>What made you unsastisfied</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4">
+				<button class="tellus-button wow bounceInLeft" data-toggle="modal" data-target="#SuggestionModal">Suggestion</button>
+				<button class="tellus-button wow bounceInRight" data-toggle="modal" data-target="#ComplaintsModal">Complaints / Compliments</button>
+			</div>
+		</div>
+		<!-- SuggestionModal -->
+		<div class="modal fade" id="SuggestionModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			
+			<div class="modal-dialog" role="document">
+				<div class="row" >
+					<div class="col-md-3" style="padding-right: 0px;padding-left: 0px ">
+						<div style="max-height:450px;height: 390px;padding:0px;background: url(images/HOME/monster-3.jpg) no-repeat center #eee;background-size: cover;"></div>
+					</div>
+					<div class="col-md-9" style="padding-left: 0px;" >
+						<div class="modal-content" >
+							<div class="modal-header">
+								<h3 class="modal-title" id="ModalLabel" style="font-weight: 700" >Suggestion</h3>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" style="color: #FFF">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form id="suggestion_form" class="form-horizontal" action=" " method="post" >
+									<div class="form-group">
+										<label for="full-name" class="control-label col-sm-3">Full name: </label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Full name..." name="fullname" class="form-control" id="full-name">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Email-text"  class="control-label col-sm-3">Email:</label>
+										<div class="col-sm-9">
+											<input  type="email" name="email" placeholder="E-Mail Address" class="form-control" id="Email-text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="message-text"  class="control-label col-sm-12" style="text-align: left;">Your Message:</label>
+										<div class="col-sm-12">
+											<textarea  placeholder="Your message"  name="message_box"  class="form-control" id="message-text"></textarea>
+										</div>
+									</div>
+
+								</div>
+								<!-- Success message -->
+								<div class="alert alert-success" role="alert" id="success_message">Success <i class="fa fa-thumbs-up"></i> Thanks for suggestion us, we will get back to you shortly.</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary"  style="font-weight: 600;background-color: #FFF;color: rgb(77,86,252)" data-dismiss="modal">Close</button>
+									<button type="submit " class="btn btn-primary" style="font-weight: 600;background-color: #FFF;color: rgb(77,86,252)">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SuggestionModal -->
+		<!--Compl-Modal -->
+
+		<div class="modal fade" id="ComplaintsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			
+			<div class="modal-dialog" role="document">
+				<div class="row"  style=" background-color: lightblue: ;">
+					<div class="col-md-3" style="padding-right: 0px;padding-left: 0px ">
+						<img src="images/HOME/monster-3.jpg" height="330" width="100%">
+						<img src="images/CONTACT imgs/skype.jpg" height="155">
+					</div>
+					<div class="col-md-9" style="padding-left: 0px;" >
+						<div class="modal-content" >
+							<div class="modal-header">
+								<h3 class="modal-title"  id="ModalLabel" style="font-weight: 700" >Complaints / Compliments</h3>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" style="color: #FFF">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form id="Complaints_form" class="form-horizontal" action=" " method="post" >
+									<div class="form-group">
+										<label for="full-name" class="control-label col-sm-3">Full name: </label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Full name..." name="fullname" class="form-control" id="full-name">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Email-text"  class="control-label col-sm-3">Email:</label>
+										<div class="col-sm-9">
+											<input  type="email" name="email" placeholder="E-Mail Address" class="form-control" id="Email-text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Email-text"  class="control-label col-sm-3">TelePhone:</label>
+										<div class="col-sm-9">
+											<input  type="tel" name="phone" placeholder="(085) - 888 8888" class="form-control" id="tel">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Email-text"  class="control-label col-sm-3">About:</label>
+										<div class="col-sm-9">
+											<div class="select-style" style="position: relative; ">
+												<select name="about" class="selec"  id="about">
+
+													<option value="">Please Choose one</option>
+													<option value="facilities">Facilities</option>
+													<option value="indoor">Indoor</option>
+													<option value="outdoor">Outdoor</option>
+													<option value="service">Service</option>
+													<option value="other">Other</option>
+												</select>
+												<i class="fa fa-sort-down fa-2x"  style="position: absolute; right: 10px; top:0px;"></i>
+											</div>
+
+										</div>
+									</div>
+									<div class="form-group" style="display: none">
+										<label for="other-text"   class="control-label col-sm-3" style="text-align: left;">About Other</label>
+										<div class="col-sm-9">
+											<input type="text"  placeholder="About other"  name="other_text"  style="background-color: transparent;color:#FFF" class="form-control" id="other_text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="message-text"  class="control-label col-sm-12" style="text-align: left;">Your Concerns:</label>
+										<div class="col-sm-12">
+											<textarea  placeholder="Your Concerns"  name="message_box"  class="form-control" id="message-text"></textarea>
+										</div>
+									</div>
+
+								</div>
+								<!-- Success message -->
+								<div class="alert alert-success" role="alert" id="success_message2">Success <i class="fa fa-thumbs-up"></i> Thanks for Complaints us, we will get back to you shortly.</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary"  style="font-weight: 600;background-color: #FFF;color: rgb(77,86,252)" data-dismiss="modal">Close</button>
+									<button type="submit " class="btn btn-primary" style="font-weight: 600;background-color: #FFF;color: rgb(77,86,252)">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end-Compl-Modal -->
+		
+		<div  class="QA wow swing">Q&A</div>
+		<div class="wrap-QA  wow fadeInRight">
+			<span >Q.1 What is a sport club?</span>
+			<div  class="content-QA">
+				<span>Sport clubs are student organizations formed by students motivated by a common interest and desire to participate and compete in a particular sport. </span>
+			</div>
+		</div>
+
+		<div class="wrap-QA wow fadeInLeft">
+			<span>Q.2 How do I get involved in a sport club?</span>
+			<div  class="content-QA ">
+				<span>Go to our sport clubs information page and click on the club you are interested in. There you will find information on each club and a contact person who can fill you in on how to get involved at the next meeting or practice. Our clubs are always looking for talented new members</span>
+			</div>
+		</div>
+
+		<div class="wrap-QA wow fadeInRight">
+			<span>Q.3 What are the benefits of joining a sport club?</span>
+			<div  class="content-QA ">
+				<span>Joining a sport club has many rewards, including the chance to compete in a sport  against other universities, involvement in campus life, the opportunity to make lifelong friendships, opportunities for leadership within the club, and the chance to stay in shape!</span>
+			</div>
+		</div>
+
+		<div class="wrap-QA  wow fadeInLeft">
+			<span>Q.4 What is the difference between sport clubs and intramurals?</span>
+			<div  class="content-QA">
+				<span>Sport clubs are led and organized by students. Team practices, meetings, competitions, and fundraisers are led by club officers and club members. Sport clubs practice multiple times per week, and many travel to compete against other schools. Intramurals consist of K-State students, faculty, and staff who compete against each other in organized leagues and tournaments within the K-State community on a more recreational level.</span>
+			</div>
+		</div>
+
+		<div class="wrap-QA  wow fadeInRight">
+			<span >Q.5 	Who do I contact with Recreational Services if I have questions about sport clubs?</span>
+			<div  class="content-QA">
+				<span>Armando Espinoza, Assistant Director for Competitive Sports, would be happy to assist you. Feel free to drop by his office at the Rec Complex, call him at 785-532-6980, or email him at <a href="mailto:ryansportsclub@gmail.com">ryansportclub@gmail.com</a>
+				</span>
+			</div>
+		</div>
+		
+	</div>
+	<footer>
+		<div id="footer" style="z-index: -100; color: #fff !important;margin-top: 50px"> <!--footer-->
+			<div class="container" style="font-weight: bold;">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-xs-12">
+						<div class="row">
+							<table class="table-condensed" style="margin-left:20px;">
+								<tr>
+									<td colspan="3" style="font-size:30px; ">
+										CONTACT US
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<br>
+									</td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-mobile" style="font-size:30px;"></i></td>
+									<td> | </td>
+									<td  style="font-size:16px;">
+										(+84) 093 268 688
+									</td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-phone" style="font-size:26px;"></i></td>
+									<td> | </td>
+									<td style="font-size:16px;">
+										(+84) 268 268 688
+									</td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-envelope" style="font-size:22px;"></i></td>
+									<td> | </td>
+									<td style="font-size:16px;">
+										info@ryansportsclub.com
+
+									</td>
+								</tr>
+								<tr>
+									<td colspan="5">
+										<br>
+									</td>
+								</tr>
+							</table>
+
+
+
+						</div>
+
+					</div>
+					<div class="col-lg-4 col-md-12 col-xs-12" style="color:#fff;">
+						<table class="table-condensed" style="border-top:none;">
+							<tr>
+								<td colspan="3" style="font-size:30px; ">
+									OPEN HOURS
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td>MONDAYS</td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									8:00 - 23:00
+								</td>
+							</tr>
+							<tr>
+								<td>TUE - FRI</td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									8:00 - 23:00
+								</td>
+							</tr>
+							<tr>
+								<td>SAT & SUN</td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									8:00 - 20:00
+								</td>
+							</tr>
+							<tr>
+								<td>PUBLIC HOLIDAYS</td>
+								<td> | </td>
+								<td style="font-size:16px;">
+									8:00 - 20:00
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<br>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-lg-4 col-md-12 col-xs-12">
+						<table class="table-condensed" >
+							<tr>
+								<td colspan="3" style="font-size:30px; ">LOCATION</td>
+
+							</tr>
+							<tr>
+								<td colspan="3">
+									<iframe class="img-responsive img-thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6626580958668!2d106.66520265820785!3d10.786376998078707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520391560324" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen>
+
+									</iframe>
+								</td>
+							</tr>
+							<tr>
+								<td style="font-size:30px;">
+									<i class="fa fa-map-marker"></i>
+
+								</td>
+								<td>
+									|
+								</td>
+								<td style="font-size:16px;">
+									590 Cach Mang Thang 08, District 10, HCMC, Vietnam.
+								</td>
+
+							</tr>
+							<tr>
+								<td colspan="3">
+									<br>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+				<div><!--1 slpitting line-->
+					<hr style="border:0.3px solid #FFF;">
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-xs-12" style=" font-weight:normal;">
+						&copy;05-02-2018 ryansportsclub.com.DesignedByTuanDuog &amp; TienPhan
+
+
+
+					</div>
+					<div class="col-lg-6 col-md-12 col-xs-12">
+						<div class="col-lg-4 col-md-4 col-xs-4">
+							<table>
+								<tr  style=" font-weight:bold; font-size: 14px;">
+									<td>FOLLOW US</td>
+								</tr>
+								<tr>
+									<td>
+										<hr style="width: 50%; margin-top:0px; margin-left:0px; border:0.6px solid ##FFF;">
+									</td>
+								</tr>
+							</table>
+
+						</div>
+						<div class="col-lg-8 col-md-8 col-xs-8">
+							<a class="btn btn-info social-icon-fa" href="#" ><i class="fa fa-facebook" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-ins"  href="#" ><i class="fa fa-instagram" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-youtube"  href="#" ><i class="fa fa-youtube" style="font-size:16px;"></i></a>
+							<a class="btn btn-info social-icon-twitter"  href="#" ><i class="fa fa-twitter" style="font-size:16px;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--footer-->
+	</footer>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+
+	<!--===============================================================================================-->
+	<!-- <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.js"></script> -->
+
+	<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4826F8MDnLa2v8yb0uvtNsP7b9ygs8Tc"></script>
+	<script src="js/map-custom.js"></script>
+	<!--===============================================================================================-->
+
+	<script src="js/CONTACT JS/menu.js"></script>
+	<<script src="js/carousel.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+	<script src="js/TELLUS/tell-us.js"></script>
+
+
+</body>
+</html>

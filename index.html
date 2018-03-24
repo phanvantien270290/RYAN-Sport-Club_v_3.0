@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home - RYAN Sports Club</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/HOME CSS/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<style type="text/css">
+
+	#bs-navbar-collapse-1 ul li a{color:#333; margin-left: 10px; transition: ease-in 0.2s;}
+	#bs-navbar-collapse-1 ul li a:hover{
+		background:rgba(0,0,0,0.6); color:#53DCDC}
+
+		#bs-navbar-collapse-1 .dropdown-menu li a {font-size:18px; padding-top:25px; padding-bottom:20px;margin-left:0px;/*background: #53DCDC;*/ color: #555;transition: ease-in 0.6s;}
+		#bs-navbar-collapse-1 .dropdown-menu li a:hover{border:0px; color:#fff; background:rgba(0,0,0,0.4); }
+		.social-icon-fa, .social-icon-ins, .social-icon-youtube,.social-icon-twitter {transition:ease-in 0.4s;}
+		.social-icon-fa:hover{background:blue;}
+		.social-icon-ins:hover{background:purple;}
+		.social-icon-youtube:hover{background:red;}
+		.social-icon-twitter:hover{background:#2E96CE; color:#ccc;}
+
+
+	</style>
+
+	<style>
+
+
+	@media only screen and (max-width: 600px) {
+		#content {
+			padding-top:20%;
+		}
+		#section_inside{
+			margin-bottom: 1%;
+		}
+		.btn-middle { margin-left: 80px; }
+		.marginLeft{ margin-left:4%; }
+	}
+</style>
+</head>
+<body class="body-wrap" style="background: linear-gradient(0deg, grey, black) !important;" >
+
+	<div id="header">
+		<!-- menu -->
+		<div class="container-fluid"  >
+			<nav class="navbar navbar-inverse navbar-fixed" id="navbar" role="navigation"  style="border-radius:0px;border:0px;background:rgba(0,0,0,0.6);z-index: 100; box-shadow: none;">
+				<div class="container-fluid" style="">
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle " style="margin-top: 27px; border: 0px; " data-toggle="collapse"  data-target="#bs-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<button type="button" onclick=" changeicon()" class="navbar-toggle " style="margin-top: 20px; border: 0px;	"  data-toggle="collapse" data-target="#searchbox">
+							<span style="color:white;" class="fa fa-search fa-2x"></span>
+						</button>
+						<button type="button"   class="navbar-toggle " style="margin-top: 20px; color: #FFF;border: 0px	" 	>
+							<span class="fa fa-sign-in fa-2x" title="login"></span>
+						</button>
+
+						<a  href="home.html"><img src="images/RyanLOGO2.png" height="100" alt=""></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+						<ul class="nav navbar-nav paddingtop-15" id="leftt">
+							<li><a href="home.html">HOME</a></li>
+							<li><a href="aboutus.html">ABOUT US</a></li>
+							<li class="dropdown" style=" margin:0px;"><!--FACILITIES-->
+								<a style="background: none;" href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									FACILITIES <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a  href="facilities.html#indoor_page">INDOOR SPORTS</a></li>
+									<li><a href="facilities.html#outdoor_page">OUTDOOR SPORTS</a></li>
+									<li><a href="facilities.html#recreation_page">RECREATIONS</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" style=" margin:0px;"><!--MEMBERSHIP-->
+								<a style="background: none;" href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" >
+									MEMBERSHIP <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" style="background: rgba(250,250,250,0.8); top:52px; left: 60px; border:0px;padding:0px 0px;">
+									<li><a href="membership_registration.html">REGISTRATION</a></li>
+									<li><a href="membership.html">MEMBER PACKAGE</a></li>
+									<li><a href="membership_login.html"> LOGIN</a></li>
+								</ul>
+							</li>
+							<li><a href="tellus.html">TELL US</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right paddingtop-15" style="padding-right: 8px">
+							<li>
+								<button onclick="changeicon()"  id="btnsearch" data-toggle="collapse" data-target="#searchbox">
+									<span class="fa fa-search fa-3x"></span>
+								</button>
+							</li>
+
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+				<div class="collapse" id="searchbox">
+					<div class="input-group"">
+						<input style="font-size:12px; font-style: italic;" type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button style="border:0px; background:#000;" class="btn btn-secondary"   type="button">
+								<i style="color: white;" class="fa fa-search fa-2x" ></i>
+							</button>
+						</span>
+					</div>
+				</div><!--end search-box-->
+			</nav>
+		</div>
+		<!-- casouel-->
+		<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="active item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<!-- Carousel nav -->
+
+		</div>
+
+		<!-- end-casouel -->
+	</div>
+	<!-- end-header -->
+
+
+
+	<section id="about-section"  style="margin-top: 5%; color: #fff">	<!--about-section-->
+		<div class="container-fluid"   ><!--about-container-fluid-->
+			<div class="row text-justify"><!--row-container-fluid-->
+				<div class="col-md-4 wow slideInLeft"  data-wow-duration="1s"  ><!--row-left-->
+					<h1 class="color-header">Spring Tournament 2018</h1>
+					<div style="position: relative;">
+						<img src="images/HOME/team-buiding.jpg" class="img-responsive " >
+						<a href="#" class="btn btn-danger text-absolute ">Read more...</a>
+					</div>
+					<div id="about-content-left">
+						<p style="font-size: 25px">2018 Youth Soccer Tournaments & Jamborees
+
+						</p>
+						<p class="font-size-19">2018 tournament dates available now–start planning your summer schedule today! View our suggestions on what to do and where to stay, view the Seattle Southside Visitor’s Guide, or find out about complimentary concierge services available to all tournament participants. Traveling from outside the Pacific Northwest? Find out how Starfire can help you get the most out of your team travel dollars with our traveling team packages.
+						</p>
+					</div>
+				</div><!--end-row-left-->
+				<div class="col-md-5 wow zoomIn" data-wow-duration="2s" ><!--row-mid-->
+					<h2 style="color: #E6541C">Today News</h2>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<a href="#"> <img  src="images/HOME/rohit-sharma-wwe-759.jpg"  class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<p >
+								Rohit Sharma shows India teammates who’s the boss
+							</p>
+							<a href="facilities.html#indoor_page" class="btn btn-danger">Read more...</a>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 25px;margin-bottom: 25px">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<a href="#"> <img  src="images/HOME/Ivan-Zaytsev.jpg"  class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 ">
+							<p >
+								Sport is a super flexible WordPress theme designed for Sporting Clubs
+								A beautifull designed
+							</p>
+							<a href="facilities.html#outdoor_page" class="btn btn-danger">Read more...</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<a href="#"> <img  src="images/HOME/Ivan-Zaytsev.jpg"  class="img-responsive"></a>
+						</div>
+						<div class="col-xs-12  col-sm-6 col-md-6 ">
+							<p>
+								Sport is a super flexible WordPress theme designed for Sporting Clubs
+								A beautifull designed
+							</p>
+							<a href="facilities.html#recreation_page" class="btn btn-danger">Read more...</a>
+						</div>
+					</div>
+
+				</div><!--end-row-mid-->
+				<div class="col-md-3 con-sm-12 wow slideInRight" data-wow-duration="1s"><!--row-right-->
+					<h2 style="color: #FFF">Sport Faces</h2>
+					<div class="row">
+						<div class="col-md-12 col-sm-4 col-xs-6" >
+							<figure>
+								<div style="position: relative;">
+									<a href="facilities.html#indoor_page"><img src="images/FACILITIES/INDOOR/basketball_player.jpg" style="max-height: 180px ;width:100% " class="img-responsive" alt=""></a>
+
+									<a href="facilities.html#indoor_page" class="btn btn-danger text-absolute" style="">Read more...</a>
+								</div>
+								<figcaption>Kobe Bean Bryan -Basketball</figcaption>
+							</figure>
+						</div>
+
+						<div class="col-md-12 col-sm-4 col-xs-6" style="padding-top: 5px;padding-bottom: 5px;position: relative;">
+							<figure>
+								<div style="position: relative;">
+									<a href="facilities.html#outdoor_page"><img src="images/FACILITIES/OUTDOOR/run_player.jpg"  style="max-height: 180px ;width:100% " class="img-responsive" alt=""></a>
+									<a href="facilities.html#outdoor_page" class="btn btn-danger text-absolute" >Read more...</a>
+								</div>
+								<figcaption>Anh Vien -Athletics</figcaption>
+							</figure>
+						</div>
+
+						<div class="col-xs-12 col-sm-4 col-md-12 " style="position: relative;">
+							<figure>
+								<div style="position: relative;">
+									<a href="facilities.html#recreation_page"><img src="images/FACILITIES/OUTDOOR/swimmer.jpg" style="max-height: 180px ;width:100% " class="img-responsive" alt=""></a>
+									<a href="facilities.html#recreation_page" class="btn btn-danger text-absolute" >Read more...</a>
+								</div>
+								<figcaption>Michael Fred Phelps II-Swimmer</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div><!--end-row-right-->
+			</div><!--end-row-container-fluid-->
+		</div><!--about-container-fluid-->
+	</section><!--end about-section-->
+
+	<div id="bg-mid" class="background-container bg-url" style="background-image: images/HOME/background-image.jpg;" ><!---->
+		<span class="color-header wow rubberBand" data-wow-duration="1s">We can do everything for you </span>
+	</div><!---->
+	<section id="video-section"><!--video-section-->
+		<div class="container-fluid"><!--video-container-fluid-->
+			<div class="row" ><!--row-container-fluid-->
+				<div class="jumbotron wow bounceInRight" data-wow-duration="2s" style="margin:10px  10px 5px;padding: 5px 10px; background:rgba(0,0,0,0.3);">
+					<h2 style="font-size:30px; color: #fff ; font-weight:bold;"	>WHAT WE HAVE</h2>
+				</div>
+				<div class="col-lg-9 wow zoomIn" style="padding-left: 0px;padding-right: 0px"><!--row-left-->
+					<video id="show-video" autobuffer autoloop loop controls width="100%">
+						<source type="video/mp4" src="images/FACILITIES/facilities_section1_1.mp4">
+						</video>
+					</div><!--end-row-left-->
+					<div class="col-lg-3" style=""><!--row-left-->
+						<div class="row" style="font-size:18px">
+							<div class="col-lg-12 col-md-4 col-sm-4 col-xs-4">
+								<video  name="intro-video"  width="100%" class=" wow rollIn">
+									<source type="video/mp4" src="images/FACILITIES/facilities_section1_1.mp4">
+									</video>
+									<span >Sport is a super flexible <a href="#" class="btn btn-danger ">Read more...</a></span>
+								</div>
+
+								<div class=" col-lg-12 col-md-4 col-sm-4 col-xs-4">
+									<video name="intro-video" width="100%" class=" wow rollIn">
+										<source type="video/mp4" src="images/ABOUTUS/galleries_2.mp4">
+										</video>
+										<span>Sport is a super flexible <a href="#" class="btn btn-danger ">Read more...</a></span>
+									</div>
+
+									<div class=" col-lg-12 col-md-4 col-sm-4 col-xs-4">
+										<video name="intro-video" width="100%" class=" wow rollIn" >
+											<source type="video/mp4" src="images/ABOUTUS/galleries_4.mp4">
+											</video>
+											<span>Sport is a super flexible <a href="#" class="btn btn-danger ">Read more...</a></span>
+										</div>
+									</div>
+								</div><!--end-row-left-->
+							</div><!--end-row-container-fluid-->
+						</div><!--end-video-container-fluid-->
+					</section><!--end-video-section-->
+
+					<div class="background-container" style="background-image: url(images/HOME/background-image.jpg);"></div>
+					<section id="member-section"><!--member-section-->
+						<div class="container-fluid"><!--member-container-fluid-->
+							<div class="jumbotron wow bounceInRight" style="	;padding: 5px; background:rgba(0,0,0,0.3);">
+								<h2 style="font-size:30px; color: #fff ; font-weight:bold;"	>OUR MEMBERS</h2>
+							</div>
+							<div class="row" style="line-height: 21.4333px"><!--row-container-fluid-->
+								<div class="col-lg-4" ><!--row-left-->
+									<div class="row">
+										<div class="col-md-6 col-sm-6 wow ">
+											<div id="thumb-content">
+												<div  class="thumb-nail">
+													<div  class="thumb-nail-circle wow fadeIn" data-wow-delay=".2s" >
+														<a href="#"><img src="images/HOME/thuan-testimonial(1).jpg" alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong  style="">Phạm Thị Minh Thuận</strong><br>
+													<span>I'm Thuan, I lost 6 Kg with TFW & Boxing. The training is intimidating but after all the pain is gone, that really worth it.</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6  col-sm-6 wow fadeIn" data-wow-delay=".2s">
+											<div id="thumb-content">
+												<div class="thumb-nail">
+													<div class="thumb-nail-circle">
+														<a href="#"><img src="images/HOME/hurley-testimonial.jpg"  alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong  > Brandon Hurley</strong><br>
+													<span>there, I'm Hurley, I lost 13 lbs with Boxing in 1 month. I am now feeling confident and fresh everyday.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="row">
+										<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+											<div id="thumb-content">
+												<div  class="thumb-nail">
+													<div  class="thumb-nail-circle">
+														<a href="#"><img src="images/HOME/man-1-120x120.jpg" alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong  style="">-Andy Cinthia</strong><br>
+													<span>
+													I'm more motivated. There's something about reaching small goals that motivates you in other areas in your life as well.</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6  col-sm-6 wow fadeIn" data-wow-delay=".2s">
+											<div id="thumb-content">
+												<div class="thumb-nail">
+													<div class="thumb-nail-circle">
+														<a href="#"><img src="images/HOME/woman-1-140x121.jpg"  alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong> Jack Duong</strong><br>
+													<span>My competition is myself. We live in a society where we constantly compare ourselves to others
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+											<div id="thumb-content">
+												<div  class="thumb-nail">
+													<div  class="thumb-nail-circle">
+														<a href="#"><img src="images/HOME/man-2.JPG" alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong  style="">Janny Nguyen</strong><br>
+													<span>
+													It helped me kick bad habits. I would come home, get into workout gear, push myself and grab for water instead of vodka.</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6  col-sm-6 wow fadeIn" data-wow-delay=".2s">
+											<div id="thumb-content">
+												<div class="thumb-nail">
+													<div class="thumb-nail-circle">
+														<a href="#"><img src="images/HOME/woman-3.JPG"  alt=""></a>
+													</div>
+												</div>
+												<div class="wow fadeInLeft" data-wow-delay="0.8s">
+													<strong  > Brandon Hurley</strong><br>
+													<span>there, I'm Hurley, I lost 13 lbs with Boxing in 1 month. I am now feeling confident and fresh everyday.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div><!--end-row-left-->
+								<div class="col-lg-8" style="height: 100vh; "><!--row-right-->
+									<video controls width="100%" class="wow fadeInRight" data-wow-delay=".8s">
+										<source src="images/ABOUTUS/galleries_2.mp4" type="video/mp4">
+											<source src="mov_bbb.ogg" type="video/ogg">
+											</video>
+
+										</div><!--end-row-right-->
+									</div><!--end-row-container-fluid-->
+								</div><!--end-member-container-fluid-->
+							</section><!--end-member-section-->
+							<footer>
+								<div id="footer" style="z-index: -100; color: #fff !important;margin-top: 50px"> <!--footer-->
+									<div class="container" style="font-weight: bold;">
+										<div class="row">
+											<div class="col-lg-4 col-md-12 col-xs-12">
+												<div class="row">
+													<table class="table-condensed" style="margin-left:20px;">
+														<tr>
+															<td colspan="3" style="font-size:30px; ">
+																CONTACT US
+															</td>
+														</tr>
+														<tr>
+															<td colspan="3">
+																<br>
+															</td>
+														</tr>
+														<tr>
+															<td><i class="fa fa-mobile" style="font-size:30px;"></i></td>
+															<td> | </td>
+															<td  style="font-size:16px;">
+																(+84) 093 268 688
+															</td>
+														</tr>
+														<tr>
+															<td><i class="fa fa-phone" style="font-size:26px;"></i></td>
+															<td> | </td>
+															<td style="font-size:16px;">
+																(+84) 268 268 688
+															</td>
+														</tr>
+														<tr>
+															<td><i class="fa fa-envelope" style="font-size:22px;"></i></td>
+															<td> | </td>
+															<td style="font-size:16px;">
+																info@ryansportsclub.com
+
+															</td>
+														</tr>
+														<tr>
+															<td colspan="5">
+																<br>
+															</td>
+														</tr>
+													</table>
+
+
+
+												</div>
+
+											</div>
+											<div class="col-lg-4 col-md-12 col-xs-12" style="color:#fff;">
+												<table class="table-condensed" style="border-top:none;">
+													<tr>
+														<td colspan="3" style="font-size:30px; ">
+															OPEN HOURS
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3">
+															<br>
+														</td>
+													</tr>
+													<tr>
+														<td>MONDAYS</td>
+														<td> | </td>
+														<td style="font-size:16px;">
+															8:00 - 23:00
+														</td>
+													</tr>
+													<tr>
+														<td>TUE - FRI</td>
+														<td> | </td>
+														<td style="font-size:16px;">
+															8:00 - 23:00
+														</td>
+													</tr>
+													<tr>
+														<td>SAT & SUN</td>
+														<td> | </td>
+														<td style="font-size:16px;">
+															8:00 - 20:00
+														</td>
+													</tr>
+													<tr>
+														<td>PUBLIC HOLIDAYS</td>
+														<td> | </td>
+														<td style="font-size:16px;">
+															8:00 - 20:00
+														</td>
+													</tr>
+													<tr>
+														<td colspan="5">
+															<br>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-lg-4 col-md-12 col-xs-12">
+												<table class="table-condensed" >
+													<tr>
+														<td colspan="3" style="font-size:30px; ">LOCATION</td>
+
+													</tr>
+													<tr>
+														<td colspan="3">
+															<iframe class="img-responsive img-thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6626580958668!2d106.66520265820785!3d10.786376998078707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520391560324" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen>
+
+															</iframe>
+														</td>
+													</tr>
+													<tr>
+														<td style="font-size:30px;">
+															<i class="fa fa-map-marker"></i>
+
+														</td>
+														<td>
+															|
+														</td>
+														<td style="font-size:16px;">
+															590 Cach Mang Thang 08, District 10, HCMC, Vietnam.
+														</td>
+
+													</tr>
+													<tr>
+														<td colspan="3">
+															<br>
+														</td>
+													</tr>
+												</table>
+
+											</div>
+										</div>
+										<div><!--1 slpitting line-->
+											<hr style="border:0.3px solid #FFF;">
+										</div>
+										<div class="row">
+											<div class="col-lg-6 col-md-12 col-xs-12" style=" font-weight:normal;">
+												&copy;05-02-2018 ryansportsclub.com.DesignedByTuanDuog &amp; TienPhan
+
+
+
+											</div>
+											<div class="col-lg-6 col-md-12 col-xs-12">
+												<div class="col-lg-4 col-md-4 col-xs-4">
+													<table>
+														<tr  style=" font-weight:bold; font-size: 14px;">
+															<td>FOLLOW US</td>
+														</tr>
+														<tr>
+															<td>
+																<hr style="width: 50%; margin-top:0px; margin-left:0px; border:0.6px solid ##FFF;">
+															</td>
+														</tr>
+													</table>
+
+												</div>
+												<div class="col-lg-8 col-md-8 col-xs-8">
+													<a class="btn btn-info social-icon-fa" href="#" ><i class="fa fa-facebook" style="font-size:16px;"></i></a>
+													<a class="btn btn-info social-icon-ins"  href="#" ><i class="fa fa-instagram" style="font-size:16px;"></i></a>
+													<a class="btn btn-info social-icon-youtube"  href="#" ><i class="fa fa-youtube" style="font-size:16px;"></i></a>
+													<a class="btn btn-info social-icon-twitter"  href="#" ><i class="fa fa-twitter" style="font-size:16px;"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!--footer-->
+							</footer>
+							<script src="js/jquery-3.2.1.min.js"></script>
+							<script src="js/bootstrap.min.js"></script>
+							<script src="js/wow.min.js"></script>
+							<script>
+								new WOW().init();
+							</script>
+							<script src="js/menu.js"></script>
+							<script src="js/home.js"></script>
+
+						</body>
+						</html>
